@@ -1,6 +1,9 @@
 import app from "./src/app.js";
+import dotenv from "dotenv";
+import {CONFIG} from "./src/configs/config.mongoose.js";
 
-const PORT = 8081;
+dotenv.config();
+const PORT = CONFIG.app.port || 8081;
 
 const server = app.listen(PORT, () => {
     console.log('App running on PORT: ', PORT)
