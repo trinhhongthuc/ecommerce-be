@@ -1,6 +1,6 @@
 import app from "./src/app.js";
 
-const PORT = 8081;
+const PORT = 3100;
 
 const server = app.listen(PORT, () => {
     console.log('App running on PORT: ', PORT)
