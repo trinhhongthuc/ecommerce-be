@@ -6,6 +6,12 @@ pipline {
         echo 'Hello world'
       }
     }
+
+     stage('Example 2') {
+      steps {
+        echo 'Hello world 2'
+      }
+    }
   }
 
 }
